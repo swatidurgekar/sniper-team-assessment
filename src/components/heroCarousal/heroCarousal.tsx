@@ -40,7 +40,7 @@ export default function HeroCarousel() {
         setCurrentIndex((currentIndex - 1 + slidesData.length) % slidesData.length);
     };
 
-    const goToSlide = (index) => {
+    const goToSlide = (index: number) => {
         setCurrentIndex(index);
     };
 
