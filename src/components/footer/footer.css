@@ -1,0 +1,295 @@
+/* Footer.css */
+
+.footer-container {
+    background-color: #1a1e28;
+    /* Dark background color from image */
+    color: #e0e0e0;
+    /* Light text color */
+    font-family: 'Inter', sans-serif;
+    /* Example font, replace with actual if known */
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows sections to wrap on smaller screens */
+    justify-content: space-between;
+    max-width: 1200px;
+    /* Max width to match common website layouts */
+    width: 100%;
+    gap: 30px;
+    /* Space between columns */
+}
+
+.footer-section {
+    flex: 1;
+    /* Allows sections to grow and shrink */
+    min-width: 250px;
+    /* Minimum width before wrapping */
+    margin-bottom: 20px;
+    /* Space between sections on smaller screens */
+}
+
+/* Company Info Section */
+.company-info .company-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.company-info .logo-icon {
+    background-color: #00c98d;
+    /* Green color for the ST icon */
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.company-info .company-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.company-info .company-description {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #b0b0b0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #b0b0b0;
+}
+
+.contact-item i {
+    margin-right: 10px;
+    color: #00c98d;
+}
+
+.contact-item.address {
+    align-items: flex-start;
+}
+
+/* Links Sections (Quick Links, Our Services) */
+.footer-section h3 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #00c98d;
+}
+
+.our-services ul li:nth-child(3) a {
+    color: #00c98d;
+    font-weight: bold;
+}
+
+.stay-connected .newsletter-text {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #b0b0b0;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.newsletter-form input[type="email"] {
+    flex-grow: 1;
+    padding: 5px 5px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #2a2f3a;
+    color: #e0e0e0;
+    margin-right: 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+.newsletter-form input[type="email"]::placeholder {
+    color: #888;
+}
+
+.newsletter-form button {
+    background-color: #00c98d;
+    /* Green button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #00b07a;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #2a2f3a;
+    border-radius: 8px;
+    color: #e0e0e0;
+    font-size: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #00c98d;
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: #b0b0b0;
+}
+
+.footer-bottom .copyright {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-bottom .legal-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom .legal-links a {
+    color: #b0b0b0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom .legal-links a:hover {
+    color: #00c98d;
+}
+
+.footer-bottom .edit-with-lovable {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.footer-bottom .edit-with-lovable img {
+    height: 20px;
+    margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        min-width: unset;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .company-info .company-logo,
+    .contact-item {
+        justify-content: center;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .newsletter-form input[type="email"] {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom .copyright {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .footer-bottom .legal-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .footer-bottom .edit-with-lovable {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 30px 15px;
+    }
+}
